@@ -52,7 +52,7 @@ df_clean[cols_to_impute] = imputer.fit_transform(df_clean[cols_to_impute])
 
 
 #aggregating
-df_clean['selfDirection'] = df_clean[['ipcrtiva','impfreea']].mean(axis=1)
+df_clean['selfdirection'] = df_clean[['ipcrtiva','impfreea']].mean(axis=1)
 df_clean['stimulation'] = df_clean[['impdiffa','iplylfra']].mean(axis=1)
 df_clean['hedonism'] = df_clean[['ipgdtima','impfuna']].mean(axis=1)
 df_clean['achievement'] = df_clean[['ipshabta','ipadvnta']].mean(axis=1)
